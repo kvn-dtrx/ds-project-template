@@ -1,28 +1,8 @@
-# Base
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-.Spotlight-V100
-.Trashes
-Icon[]
-._*
-
-# Linux
-*~
-.nfs*
-
-# Windows
-Desktop.ini
-Thumbs.db
-ehthumbs.db
-$RECYCLE.BIN/
-
-# Logs and temporary files
-**/log{,s}/
-*.bak
-*.log
-*.swo
-*.swp
-*.tmp
+.python-version
+.venv/
+built/
+data/
+plots/
+*.egg-info/
+__pycache__/
+*.pyi
