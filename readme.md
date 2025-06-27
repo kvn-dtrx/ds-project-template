@@ -1,4 +1,4 @@
-# Generic Data Science Project
+# Data Science Project
 <!-- TODO: Update title -->
 
 ---
@@ -7,7 +7,7 @@
 
 Some general remarks /documents on usages elucidating can be found in [`meta/`](./meta/).
 
-This note is intended to be remove before project submission.
+⚠️⚠️⚠️ This note is intended to be removed before project submission. ⚠️⚠️⚠️
 
 ---
 
@@ -122,10 +122,7 @@ Here, you may supply a name for the repository, of course.
 ## Colophon
 <!-- TODO: Update section -->
 
-**Authors:**
-
-- [The Octocat](https://github.com/octocat)
-- [Ghost](https://github.com/ghost)
+**Authors:** [The Octocat](https://github.com/octocat), [Ghost](https://github.com/ghost)
 
 **Template:** This repository was created from the [10NN DS/ML Project Template](https://github.com/neuefische/ds-take-me-home_template).
 

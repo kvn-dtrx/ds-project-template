@@ -1,4 +1,6 @@
-# Additional Recommendations for Take-Me-Home Challenges
+# Take-Me-Home Challenges
+
+## What is a Take-Me-Home Challenge?
 
 - Please read the stellenausschreibung[^ausschreibung] and try to stick to any specified requirements mentioned there (what are the deliverables). Particularly, do not make use of modules that can be considered exotic
   - Prefer [polars](https://github.com/pola-rs/polars) or [vaex](https://github.com/vaexio/vaex) over [pandas](https://github.com/pandas-dev/pandas).
@@ -26,3 +28,21 @@
 [^ausschreibung]: In general, it is good to store the stellenausschreibung for reference purposes.
 
 [^sql]: Depending on personal preference and requirement of the challenge, it is principally also possible to add a (well-documented) SQL script for fetching
+
+## Triggers/Todo
+
+- Einleitung schreiben
+- Domain Knowledge einfließen lassen
+- Kommentare + Markdown, auch wenn overkill erscheint.
+- Hypothesen for structuring!
+- Konklusion und Ausblick!
+- Bewerbung
+- pkl: Not human readable but there are better alternatives (parquet). csv.
+
+## Resources
+
+You can find a apocryphal collection of take-me-home challenges can be found in 
+[this repository](https://github.com/neuefische/ds-take-me-home).
+
+https://www.interviewquery.com/p/data-science-takehome-challenges
+https://datamasked.com

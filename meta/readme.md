@@ -1,16 +1,12 @@
-# ds-take-me-home Template
+# Data Science Project Template
 
-This repository tries to provide a convenient template for take-me-home challenges as they are usual in job application processes.
+## Synopsis
 
-note that the template functionality relies on GitHub
+This repository provides
 
-what is a take me home challenge?
+This repository tries to provide a convenient template for [*take-me-home* challenges](./docs/take-me-home-challenges.md) as they are usual in job application processes.
 
-You can find a apocryphal collection of take-me-home challenges can be found in [this repository](https://github.com/neuefische/ds-take-me-home).
-
-examples
-
-if you want to provide a repository as proposal, and you have present a repo.
+but it is not restricted to. It contains more than
 
 It contains surely more and A bit overkill, feel free to remove those parts.
 
@@ -59,27 +55,27 @@ git clone https://github.com/neuefische/ds-take-me-home_template.git foo &&
 To make it more lightweight, there are the following options:
 
 - Downgrade from `pyproject.toml` to `requirements.txt`:
-    - Create `requirements.txt`.
-    - Transform the dependencies block from `pyproject.toml` to `requirements.txt`.
-    - Remove `pyproject.toml`.
-    - Adjust the description in `readme.me`.
-    - Adjust the commands in `makefile`.
+  - Create `requirements.txt`.
+  - Transform the dependencies block from `pyproject.toml` to `requirements.txt`.
+  - Remove `pyproject.toml`.
+  - Adjust the description in `readme.me`.
+  - Adjust the commands in `makefile`.
   Then, it is still possible to use code from the directory `src/foo/` as if it were an ordinary module, but you to write a `setup.py` and to add the line `-e ./src/foo` to `requirements.txt`, compare with <https://xebia.com/blog/a-practical-guide-to-using-setup-py>.
 
 - Downgrade from automatic to manual installation:
-    - Remove the `make` install description from `readme.md`.
-    - Move the installation commands from `makefile` to code blocks in the `readme.md` file.
-    - Remove `makefile`.
+  - Remove the `make` install description from `readme.md`.
+  - Move the installation commands from `makefile` to code blocks in the `readme.md` file.
+  - Remove `makefile`.
 
 - Remove auxiliary code in `src/`:
-    - Move all required Python code out of `src/` either
-        - into scripts which are sourced in the notebooks, or
-        - directly into the notebooks.
-    - Remove `src/`.
+  - Move all required Python code out of `src/` either
+    - into scripts which are sourced in the notebooks, or
+    - directly into the notebooks.
+  - Remove `src/`.
 
 - Remove everything that is license-related[^american]:
-    - Remove `license.txt`.
-    - Remove the license entry in `pyproject.toml`
+  - Remove `license.txt`.
+  - Remove the license entry in `pyproject.toml`
 
 [^american]: GitHub only recognises the American spelling variant. Even the [National Library of UK](https://github.com/britishlibrary) has to accept the inevitable.
 
@@ -87,3 +83,11 @@ Default install (user-wide)
 (--editable|-e) allows for development mode, where changes
 to the source code are immediately reflected without
 needing to reinstall.
+
+## Colophon
+
+**Authors:** [kvn-dtrx](https://github.com/kvn-dtrx)
+
+**Template:** This repository was created from the [Data Science Project Template](https://github.com/kvn-dtrx/ds-project-template) (by infinite recursion).
+
+**License:** [MIT License](license.txt)
