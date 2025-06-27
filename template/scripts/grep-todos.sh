@@ -5,13 +5,14 @@
 # ---
 
 OUTPUT_NAME="todos.md"
+OUTPUT_DIR="target"
 # REGEX='^[[:space:]]*(# |\*\*)?TODO:'
 REGEX='^[[:space:]]*(#|\"#|\*\*)[[:space:]]*TODO:'
 
 script_path="$(realpath "$0")"
 script_name="$(basename "${script_path}")"
 script_dir="$(dirname "${script_path}")"
-output_path="${script_dir}/built/${OUTPUT_NAME}"
+output_path="${script_dir}/${OUTPUT_DIR}/${OUTPUT_NAME}"
 
 if ! cd "${script_dir}"; then
     printf '%s\n' \

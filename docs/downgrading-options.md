@@ -1,5 +1,7 @@
 # Downgrading Options
 
+This template repository was originally intended to be dedicated exclusively to *Take Me Home* Challenges; however, it has since expanded and may now offer more than what might reasonably be employed in such a challenge.
+
 Presented here is an outline of the options available to render the template more lightweight if necessary:
 
 - Downgrade from `pyproject.toml` to `requirements.txt`:
