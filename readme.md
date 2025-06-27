@@ -1,18 +1,43 @@
-# Data Science Project Template
+# Generic Data Science Project
+<!-- TODO: Update title -->
+
+---
+
+**NOTE:**
+
+Some general remarks /documents on usages elucidating can be found in [`meta/`](./meta/).
+
+This note is intended to be remove before project submission.
+
+---
 
 ## Synopsis
 
-This repository provides a generic template that may be utilised for small data science projects.
+### Problem Description
 
-The template was originally intended to be dedicated exclusively to *Take Me Home* Challenges[^tmh-challenge]; however, it has since expanded and may now offer more than what might reasonably be employed in such a challenge.
+<!-- 
+TODO: Write this section 
 
-[^tmh-challenge]: In application processes for data scientist positions, it is not uncommon for employers to assign small homework exercises, so-called *Take Me Home* challenges, to applicants in order to assess their skills. A *Take Me Home* challenge should be submitted by the day following its assignment.
+Aspects which can be addressed here:
 
-The actual template resides in [`template/`](./template/) whereas [`docs/`](./docs/) contains accompanying notes, including downgrading options and general advice.
+- Problem:
+  - The business/research problem.
+  - The objective of the project.
+  - Key questions answered.
+- Data:
+  - Source(s) of data.
+  - How to access (if public).
+  - Description of columns/features.
+  - Size and format.
+- Results:
+  - Summary of findings (accuracy, metrics, charts).
+  - Visuals or links to reports (e.g., PDF, dashboard).
+  - Key insights.
+-->
 
-## Template Setup
+## Repository Organisation
 
-### Repository on GitHub
+The organisation of the repository follows common conventions and therefore requires little explanation. Our analysis notebooks (with technical details) are subordinated to [`notebooks/`](./notebooks/)
 
 If you possess a GitHub account, you may create a new repository based upon this template either through your web browser or, if you have installed the GitHub command-line utility gh, via the terminal.
 
@@ -94,23 +119,16 @@ Here, you may supply a name for the repository, of course.
 
 ---
 
-## <a name="colophon"></a>Colophon<small><sup>[↩](#colophon)</sup></small>
+## Colophon
+<!-- TODO: Update section -->
 
 **Authors:**
 
 - [The Octocat](https://github.com/octocat)
 - [Ghost](https://github.com/ghost)
 
-**Template:**
+**Template:** This repository was created from the [10NN DS/ML Project Template](https://github.com/neuefische/ds-take-me-home_template).
 
-This repository was created from the [10NN DS/ML Project Template](https://github.com/neuefische/ds-take-me-home_template).
+**License:** [MIT License](license.txt)
 
-**License:**
-
-[MIT License](licence.txt)
-
-**Acknowledgements:**
-
-I would also like to thank my ghostwriter [Gregory Peter Thompson](https://chatgpt.com).
-
----
+**Acknowledgements:** The first author would also like to thank his ghostwriter [Gregory Peter Thompson](https://chatgpt.com).
