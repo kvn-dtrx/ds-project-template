@@ -1,0 +1,9 @@
+[subtree "docs"]
+    path = docs
+    url = git@github.com:kvn-dtrx/ds-project-template_docs.git
+    remote = docs
+
+[subtree "template"]
+    path = template
+    url = git@github.com:kvn-dtrx/ds-project-template_template.git
+    remote = template
