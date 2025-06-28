@@ -4,21 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 # TODO: Update project name
-name = "ds-take-me-home"
+name = "ds-project-template"
 # TODO: Update version number
 version = "0.1.0"
 # TODO: Update description
-description = "Prediction of Stock Market Prices Using TFT"
+description = "DS Project Template"
 # TODO: Update authors
 authors = [
-    { name = "User 1", email = "user-1@invalid-domain.com" },
-    { name = "User 2", email = "user-2@invalid-domain.com" },
+    { name = "The Octocat", email = "octocat@github.com" },
+    { name = "Ghost" },
 ]
 readme = "readme.md"
 requires-python = ">=3.11"
 # TODO: Update license file
 license = { file = "license.txt" }
-# TODO: Update dependencies
+# TODO: Update dependencies (in particular, remove superfluous dependencies)
 dependencies = [
     # A python library for easy manipulation and forecasting of time series.
     "darts==0.35.0",

@@ -6,7 +6,7 @@ import os
 import pandas as pd
 from typing import List
 import matplotlib.pyplot as plt
-from local_nbutils.cfg import CFG
+from ipynb_nbutils.cfg import CFG
 
 
 def dump_df(

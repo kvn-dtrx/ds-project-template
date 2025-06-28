@@ -1,99 +1,67 @@
-# Project Title
+# Data Science Project Template
 
-> One-sentence summary of the project’s goal and outcome.
+## Synopsis
 
-**TODO:** Update title
+This repository provides a generic template that may be utilised for small data science projects.
 
-## Table of Contents
+The template was originally intended to be dedicated exclusively to *Take Me Home* Challenges[^tmh-challenge]; however, it has since expanded and may now offer more than what might reasonably be employed in such a challenge.
 
-- [Disclaimer](#disclaimer)
-- [Table of Contents](#table-of-contents)
-- [Synopsis](#synopsis)
-- [Installation](#installation)
-    - [Requirements](#requirements)
-    - [Setup](#setup)
-    - [Clean-Up](#clean-up)
-- [Usage](#usage)
-    - [Subcommands](#subcommands)
-    - [Examples](#examples)
+[^tmh-challenge]: In application processes for data scientist positions, it is not uncommon for employers to assign small homework exercises, so-called *Take Me Home* challenges, to applicants in order to assess their skills. A *Take Me Home* challenge should be submitted by the day following its assignment.
 
-## <a name="synopsis"></a>Synopsis<small><sup>[↩](#table-of-contents)</sup></small>
+The actual template resides in [`template/`](./template/) whereas [`docs/`](./docs/) contains accompanying notes, including downgrading options and general advice.
 
-**TODO:** Describe:
+## Template Setup
 
-- The business/research problem.
-- The objective of the project.
-- Key questions answered.
+### Repository on GitHub
 
-## <a name="project-structure"></a>Project Structure<small><sup>[↩](#project-structure)</sup></small>
+If you possess a GitHub account, you may create a new repository based upon this template either through your web browser or, if you have installed the GitHub command-line utility gh, via the terminal.
 
-``` text
-.
-├── data/             # Raw and processed data
-├── notebooks/        # Jupyter notebooks
-├── src/              # Source code (loading, cleaning, modeling)
-├── plots/            # Charts and visualisations
-├── requirements.txt  # Project configuration
-└── README.md         # Project overview
+#### Browser Method
+
+You may open the following link:
+
+<div align="center">
+<https://github.com/kvn-dtrx/ds-project-template_template/generate>
+</div>
+
+This is equivalent to opening the [main page](https://github.com/kvn-dtrx/ds-project-template_template) of the template repository and selecting the green "Use this template" in the top right corner of the window, then choosing "Create a new repository".
+
+Complete the forms according to your requirements and press the green "Create repository" button in the bottom right corner.
+
+#### Terminal Method
+
+Assuming that you are authenticated on CLI, you may likewise create a repository from the template by executing a command such as the following:
+
+``` shell
+gh repo create \
+    <reponame> \
+    <visibility> \
+    --template kvn-dtrx/ds-project-template_template
 ```
 
-## <a name="data"></a>Data<small><sup>[↩](#data)</sup></small>
+Here, you may supply a name for the repository and specify your preferred visibility option such as `--private` or `--public`.
 
-- Source(s) of data.
-- How to access (if public).
-- Description of columns/features.
-- Size and format.
+### Local Repository
 
-## <a name="results"></a>Results<small><sup>[↩](#results)</sup></small>
+If you only need a local repository, rather than one hosted on GitHub, you may simply clone the template repository and purge its history.[^gh-templates]
 
-- Summary of findings (accuracy, metrics, charts).
-- Visuals or links to reports (e.g., PDF, dashboard).
-- Key insights.
+In your terminal, navigate to a working directory of your choice and execute a command such as the following:
 
-## <a name="installation"></a>Installation<small><sup>[↩](#table-of-contents)</sup></small>
+``` shell
+git clone \
+    https://github.com/kvn-dtrx/ds-project-template_template.git \
+    <reponame> &&
+        cd <reponame> &&
+        rm -rf .git &&
+        git init
+```
 
-### Requirements
+Here, you may supply a name for the repository, of course.
 
-- Python 3.11.3
-- pyenv
+[^gh-templates]: Of course, GitHub's templating mechanism offers more benefits than a "clean history", cf. <https://gitprotect.io/blog/how-to-use-github-repository-templates>.
 
-### Setup
+## Colophon
 
-1. Navigate to a working directory of your choice, then clone the repository and enter it:
+**Authors:** [kvn-dtrx](https://github.com/kvn-dtrx)
 
-   ``` shell
-   git clone https://github.com/<username>/<reponame>.git &&
-       cd <reponame>
-   ```
-
-2. Choose a setup option based on your operating system and intended use:
-
-   - `make basic-unix` / `make basic-win`: for general use or exploration (core dependencies only).
-   - `make dev-unix` / `make dev-win`: for contributors (includes development tools like linters and pre-commit hooks).
-
-   If you prefer to run the commands manually yourself or want to inspect what each `make` target does first, use the `-n` flag for a dry run. This prints the commands without executing them:
-
-   ``` shell
-   make -n <target>
-   ```
-
-3. Activate the virtual environment:
-
-   - On macOS/Linux, run:
-
-     ```shell
-     source .venv/bin/activate
-     ```
-
-   - On Windows (PowerShell), run:
-
-     ``` powershell
-     .\.venv\Scripts\Activate.ps1
-     ```
-
-## <a name="licence"></a>Licence<small><sup>[↩](#licence)</sup></small>
-
-🪺 License
-
-Add your license (MIT, Apache, etc.), or link to LICENSE
----
+**License:** [MIT License](license.txt)

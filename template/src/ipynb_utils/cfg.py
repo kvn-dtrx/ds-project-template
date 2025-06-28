@@ -1,8 +1,9 @@
 # ---
-# description:
+# description: Configuration for notebooks.
 # ---
 
-# Required imports.
+# Required imports
+
 import os
 import subprocess
 import matplotlib.pyplot as plt
