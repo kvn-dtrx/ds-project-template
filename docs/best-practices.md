@@ -1,10 +1,4 @@
-# *Take Me Home* Challenges
-
-## Rationale
-
-In application processes for data scientist positions, it is not uncommon for employers to assign small homework exercises, so-called *Take Me Home* challenges, to applicants in order to assess their skills. A *Take Me Home* challenge should be submitted by the day following its assignment.
-
-## Best Practices
+# Best Practices
 
 Below, we present some (unordered) advice for refining submissions of *Take Me Home* challenges. You may also consult the [Dos and Don'ts](./dos-and-donts.md).
 

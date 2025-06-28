@@ -2,18 +2,13 @@
 
 ## Synopsis
 
-**TODO:**
+This repository provides a generic template that may be utilised for small data science projects.
 
-This repository provides a convenient template for *take-me-home* challenges as commonly encountered in job application processes.
+The template was originally intended to be dedicated exclusively to *Take Me Home* Challenges[^tmh-challenge]; however, it has since expanded and may now offer more than what might reasonably be employed in such a challenge.
 
-but it is not restricted to. It contains more than
+[^tmh-challenge]: In application processes for data scientist positions, it is not uncommon for employers to assign small homework exercises, so-called *Take Me Home* challenges, to applicants in order to assess their skills. A *Take Me Home* challenge should be submitted by the day following its assignment.
 
-It contains surely more and A bit overkill, feel free to remove those parts.
-
-Repository consists of two subtrees:
-
-- `template/`: The actual template.
-- `docs/`: A small documentation with checklist
+The actual template resides in [`template/`](./template/) whereas [`docs/`](./docs/) contains accompanying notes, including downgrading options and general advice.
 
 ## Template Setup
 
@@ -25,9 +20,11 @@ If you possess a GitHub account, you may create a new repository based upon this
 
 You may open the following link:
 
-<https://github.com/kvn-dtrx/ds-project-template/generate>
+<div align="center">
+<https://github.com/kvn-dtrx/ds-project-template_template/generate>
+</div>
 
-This is equivalent to opening the [main page](https://github.com/kvn-dtrx/ds-project-template) of the template repository and selecting the green "Use this template" in the top right corner of the window, then choosing "Create a new repository".
+This is equivalent to opening the [main page](https://github.com/kvn-dtrx/ds-project-template_template) of the template repository and selecting the green "Use this template" in the top right corner of the window, then choosing "Create a new repository".
 
 Complete the forms according to your requirements and press the green "Create repository" button in the bottom right corner.
 
@@ -39,7 +36,7 @@ Assuming that you are authenticated on CLI, you may likewise create a repository
 gh repo create \
     <reponame> \
     <visibility> \
-    --template kvn-dtrx/ds-project-template
+    --template kvn-dtrx/ds-project-template_template
 ```
 
 Here, you may supply a name for the repository and specify your preferred visibility option such as `--private` or `--public`.
@@ -66,7 +63,5 @@ Here, you may supply a name for the repository, of course.
 ## Colophon
 
 **Authors:** [kvn-dtrx](https://github.com/kvn-dtrx)
-
-<!-- **Template:** This repository was created from the [Data Science Project Template](https://github.com/kvn-dtrx/ds-project-template) (by infinite recursion). -->
 
 **License:** [MIT License](license.txt)
