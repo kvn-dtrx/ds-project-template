@@ -42,19 +42,21 @@ Aspects which can be addressed here:
 
 The organisation of the repository follows common conventions and therefore requires little explanation. Our analysis notebooks (with technical details) are subordinated to [`notebooks/`](./notebooks/)
 
-If you possess a GitHub account, you may create a new repository based upon this template either through your web browser or, if you have installed the GitHub command-line utility gh, via the terminal.
+- Python 3.11.3
+- pyenv
 
-#### Browser Method
+### Setup
 
-You may open the following link:
+1. Navigate to a working directory of your choice, then clone the repository and enter it:
 
 > <https://github.com/kvn-dtrx/ds-project-template_template/generate>
 
 This is equivalent to opening the [main page](https://github.com/kvn-dtrx/ds-project-template_template) of the template repository and selecting the green "Use this template" in the top right corner of the window, then choosing "Create a new repository".
 
-Complete the forms according to your requirements and press the green "Create repository" button in the bottom right corner.
+   - `make basic-unix` / `make basic-win`: for general use or exploration (core dependencies only).
+   - `make dev-unix` / `make dev-win`: for contributors (includes development tools like linters and pre-commit hooks).
 
-#### Terminal Method
+   If you prefer to run the commands manually yourself or want to inspect what each `make` target does first, use the `-n` flag for a dry run. This prints the commands without executing them:
 
 Assuming that you are authenticated on CLI, you may likewise create a repository from the template by executing a command such as the following:
 
