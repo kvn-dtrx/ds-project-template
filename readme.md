@@ -1,4 +1,18 @@
-# Data Science Project Template
+# Data Science Project
+<!-- TODO: Update title -->
+
+---
+
+⚠️⚠️⚠️ **NOTE** ⚠️⚠️⚠️
+
+This repository represents the
+To The logical root directory of this repository is moved to [`meta/`](./meta/)!
+
+Won't employ  we decided to move the TO make templating for the user as convenient as possible (and submodules subtrees or dedicated documentation branches), the logical root of 
+
+This note is intended to be removed before project submission.
+
+---
 
 ## Synopsis
 
@@ -73,9 +87,12 @@ Here, you may supply a name for the repository, of course.
 [^gh-templates]: Of course, GitHub's templating mechanism offers more benefits than a "clean history", cf. <https://gitprotect.io/blog/how-to-use-github-repository-templates>.
 
 ## Colophon
+<!-- TODO: Update section -->
 
-**Authors:** [kvn-dtrx](https://github.com/kvn-dtrx)
+**Authors:** [The Octocat](https://github.com/octocat), [Ghost](https://github.com/ghost)
 
 <!-- **Template:** This repository was created from the [Data Science Project Template](https://github.com/kvn-dtrx/ds-project-template) (by infinite recursion). -->
 
 **License:** [MIT License](license.txt)
+
+**Acknowledgements:** The first author would also like to thank his ghostwriter [Gregory Peter Thompson](https://chatgpt.com).
