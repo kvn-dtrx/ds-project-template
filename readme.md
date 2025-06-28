@@ -76,6 +76,6 @@ Here, you may supply a name for the repository, of course.
 
 **Authors:** [kvn-dtrx](https://github.com/kvn-dtrx)
 
-**Template:** This repository was created from the [Data Science Project Template](https://github.com/kvn-dtrx/ds-project-template) (by infinite recursion).
+<!-- **Template:** This repository was created from the [Data Science Project Template](https://github.com/kvn-dtrx/ds-project-template) (by infinite recursion). -->
 
 **License:** [MIT License](license.txt)
