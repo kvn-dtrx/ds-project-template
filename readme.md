@@ -20,9 +20,7 @@ If you possess a GitHub account, you may create a new repository based upon this
 
 You may open the following link:
 
-<div align="center">
 <https://github.com/kvn-dtrx/ds-project-template_template/generate>
-</div>
 
 This is equivalent to opening the [main page](https://github.com/kvn-dtrx/ds-project-template_template) of the template repository and selecting the green "Use this template" in the top right corner of the window, then choosing "Create a new repository".
 
