@@ -1,62 +1,32 @@
-# Data Science Project
-<!-- TODO: Update title -->
-
----
-
-⚠️⚠️⚠️ **NOTE** ⚠️⚠️⚠️
-
-This repository represents the
-To The logical root directory of this repository is moved to [`meta/`](./meta/)!
-
-Won't employ  we decided to move the TO make templating for the user as convenient as possible (and submodules subtrees or dedicated documentation branches), the logical root of 
-
-This note is intended to be removed before project submission.
-
----
+# Data Science Project Template
 
 ## Synopsis
 
-### Problem Description
+This repository provides a generic template that may be utilised for small data science projects.
 
-<!-- 
-TODO: Write this section 
+The template was originally intended to be dedicated exclusively to *Take Me Home* Challenges[^tmh-challenge]; however, it has since expanded and may now offer more than what might reasonably be employed in such a challenge.
 
-Aspects which can be addressed here:
+[^tmh-challenge]: In application processes for data scientist positions, it is not uncommon for employers to assign small homework exercises, so-called *Take Me Home* challenges, to applicants in order to assess their skills. A *Take Me Home* challenge should be submitted by the day following its assignment.
 
-- Problem:
-  - The business/research problem.
-  - The objective of the project.
-  - Key questions answered.
-- Data:
-  - Source(s) of data.
-  - How to access (if public).
-  - Description of columns/features.
-  - Size and format.
-- Results:
-  - Summary of findings (accuracy, metrics, charts).
-  - Visuals or links to reports (e.g., PDF, dashboard).
-  - Key insights.
--->
+The actual template resides in [`template/`](./template/) whereas [`docs/`](./docs/) contains accompanying notes, including downgrading options and general advice.
 
-## Repository Organisation
+## Template Setup
 
-The organisation of the repository follows common conventions and therefore requires little explanation. Our analysis notebooks (with technical details) are subordinated to [`notebooks/`](./notebooks/)
+### Repository on GitHub
 
-- Python 3.11.3
-- pyenv
+If you possess a GitHub account, you may create a new repository based upon this template either through your web browser or, if you have installed the GitHub command-line utility gh, via the terminal.
 
-### Setup
+#### Browser Method
 
-1. Navigate to a working directory of your choice, then clone the repository and enter it:
+You may open the following link:
 
-> <https://github.com/kvn-dtrx/ds-project-template_template/generate>
+<https://github.com/kvn-dtrx/ds-project-template_template/generate>
 
 This is equivalent to opening the [main page](https://github.com/kvn-dtrx/ds-project-template_template) of the template repository and selecting the green "Use this template" in the top right corner of the window, then choosing "Create a new repository".
 
-   - `make basic-unix` / `make basic-win`: for general use or exploration (core dependencies only).
-   - `make dev-unix` / `make dev-win`: for contributors (includes development tools like linters and pre-commit hooks).
+Complete the forms according to your requirements and press the green "Create repository" button in the bottom right corner.
 
-   If you prefer to run the commands manually yourself or want to inspect what each `make` target does first, use the `-n` flag for a dry run. This prints the commands without executing them:
+#### Terminal Method
 
 Assuming that you are authenticated on CLI, you may likewise create a repository from the template by executing a command such as the following:
 
@@ -89,12 +59,7 @@ Here, you may supply a name for the repository, of course.
 [^gh-templates]: Of course, GitHub's templating mechanism offers more benefits than a "clean history", cf. <https://gitprotect.io/blog/how-to-use-github-repository-templates>.
 
 ## Colophon
-<!-- TODO: Update section -->
 
-**Authors:** [The Octocat](https://github.com/octocat), [Ghost](https://github.com/ghost)
-
-<!-- **Template:** This repository was created from the [Data Science Project Template](https://github.com/kvn-dtrx/ds-project-template) (by infinite recursion). -->
+**Authors:** [kvn-dtrx](https://github.com/kvn-dtrx)
 
 **License:** [MIT License](license.txt)
-
-**Acknowledgements:** The first author would also like to thank his ghostwriter [Gregory Peter Thompson](https://chatgpt.com).
