@@ -34,4 +34,4 @@ Below, we present some (unordered) advice for refining submissions of *Take Me H
 
 - [23 Take-Home Data Science Challenges (with Examples + Solutions)](https://www.interviewquery.com/p/data-science-takehome-challenges)
 - [TakeHomeDataChallenges](https://github.com/stasi009/TakeHomeDataChallenges): Suggested solutions to the assignments in the book *A Collection of Data Science Take-Home Challenges*
-<!-- - [ds-take-me-home](https://github.com/neuefische/ds-take-me-home): An apocryphal collection of *Take Me Home* challenges. -->
+<!-- - [ds-take-me-home](https://github.com/neuefische/ds-take-me-home): An apocryphal collection of *Take Me Home* challenges -->
