@@ -54,4 +54,6 @@ models/*
 !**/logs/.gitkeep
 
 **/target/*
+# DIFFERENCE?
+!**/target/.gitkeep
 !**/target/.gitkeep
