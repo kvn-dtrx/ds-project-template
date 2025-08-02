@@ -1,5 +1,5 @@
 # ---
-# description: __init__ file for ipynb_utils.
+# description: Entry point for import.
 # ---
 
 from .utils import *

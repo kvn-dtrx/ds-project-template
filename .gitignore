@@ -6,7 +6,7 @@
 .LSOverride
 .Spotlight-V100
 .Trashes
-Icon[]
+Icon[[]]
 ._*
 
 # Linux
@@ -41,13 +41,13 @@ __pycache__/
 
 # Data Science
 
-data/*
+**/data/*
 !data/.gitkeep
 
 **/plots/*
 !**/plots/.gitkeep
 
-models/*
+**/models/*
 !models/.gitkeep
 
 **/logs/*

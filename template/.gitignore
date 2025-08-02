@@ -6,7 +6,7 @@
 .LSOverride
 .Spotlight-V100
 .Trashes
-Icon[]
+Icon[[]]
 ._*
 
 # Linux
@@ -52,6 +52,3 @@ models/*
 
 **/logs/*
 !**/logs/.gitkeep
-
-**/target/*
-!**/target/.gitkeep
