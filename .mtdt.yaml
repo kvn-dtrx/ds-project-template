@@ -1,0 +1,7 @@
+project:
+  name: Data Science Project Template
+  description: A generic template for small data science projects
+  github: https://github.com/kvn-dtrx/ds-project-template
+  authors:
+    - name: Kvn Dtrx
+      mail: kvn.dtrx+git@protonmail.ch
