@@ -17,8 +17,8 @@ This note should be removed prior to project submission, of course.
 
 ## Synopsis
 
-<!-- 
-TODO: Write this section 
+<!--
+TODO: Write this section
 
 Aspects which can be addressed here:
 

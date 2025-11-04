@@ -1,0 +1,15 @@
+gitignore:
+  - sources:
+      - "base.ignore"
+    target: ".gitignore"
+  # - sources:
+  #     - "base.ignore"
+  #     - "ds-base"
+  #   target: "template/.gitignore"
+# license:
+#   - sources:
+#       - "mit.txt"
+#     target: "license.txt"
+#   - sources:
+#       - "mit.txt"
+#     target: "template/license.txt"

@@ -5,3 +5,15 @@ project:
   authors:
     - name: Kvn Dtrx
       mail: kvn.dtrx+git@protonmail.ch
+
+subtrees:
+  - path: docs
+    remote: docs
+    branch: main
+    description: Documentation directory of the data science project template
+    github: git@github.com:kvn-dtrx/ds-project-template_docs.git
+  - path: template
+    remote: template
+    branch: main
+    description: Template directory of the data science project template
+    github: git@github.com:kvn-dtrx/ds-project-template_template.git

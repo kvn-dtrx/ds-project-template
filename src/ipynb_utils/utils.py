@@ -81,4 +81,3 @@ def get_alchemy_db_string(
 ) -> str:
     db_string = f"postgresql://{user}:{password}@{host}:{port}/{database}"
     return db_string
-
