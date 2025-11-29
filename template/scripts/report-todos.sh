@@ -22,10 +22,10 @@ if ! cd "${script_dir}"; then
     exit 1
 fi
 
-git_dir="$(git rev-parse --show-toplevel 2>/dev/null)"
+git_dir="$(git rev-parse --show-toplevel 2> /dev/null)"
 
 if ! cd "${git_dir}"; then
-    printf '%s\n' \
+    printf "%s\n" \
         "CDing to git repository location failed:" \
         "  ${script_dir}" \
         >&2
@@ -35,14 +35,14 @@ fi
 tmp_path="${output_path}.tmp"
 
 git ls-files --cached --others --exclude-standard -z |
-    xargs -0 grep -Hn -E "${REGEX}" 2>/dev/null |
+    xargs -0 grep -Hn -E "${REGEX}" 2> /dev/null |
     sed 's@^[[:space:]]*@@' |
-    sed 's@^\(.*\):\([0-9]*\):@\- [\1, line \2](../../\1#L\2): @' >"${tmp_path}"
+    sed 's@^\(.*\):\([0-9]*\):@\- [\1, line \2](../../\1#L\2): @' > "${tmp_path}"
 
 todos="$(cat "${tmp_path}")"
 no_todos="$(echo "${todos}" | sed -n '$=')"
 
-rm "${tmp_path}" "${output_path}" 2>/dev/null
+rm "${tmp_path}" "${output_path}" 2> /dev/null
 
 {
     printf \
@@ -62,4 +62,4 @@ rm "${tmp_path}" "${output_path}" 2>/dev/null
         printf '\n'
         printf '%s\n' "${todos}"
     fi
-} >"${output_path}"
+} > "${output_path}"
