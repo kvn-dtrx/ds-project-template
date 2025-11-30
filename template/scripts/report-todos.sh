@@ -15,7 +15,7 @@ script_dir="$(dirname "${script_path}")"
 output_path="${script_dir}/${OUTPUT_DIR}/${OUTPUT_NAME}"
 
 if ! cd "${script_dir}"; then
-    printf '%s\n' \
+    printf "%s\n" \
         "CDing to script directory failed:" \
         "  ${script_dir}" \
         >&2
@@ -56,10 +56,12 @@ rm "${tmp_path}" "${output_path}" 2> /dev/null
         'Number of TODOs: %s\n\n' \
         "${no_todos}"
     if [ "${no_todos}" -ne 0 ]; then
-        printf '**NOTE:**\n\n'
-        printf '\- Paths are specified relative to the root of the repository.\n'
-        printf '\- VS Code cannot directly jump to line numbers of notebooks.\n'
-        printf '\n'
-        printf '%s\n' "${todos}"
+        printf "%s\n" \
+            "**NOTE:**" \
+            "" \
+            "- Paths are specified relative to the root of the repository." \
+            "- VS Code cannot directly jump to line numbers of notebooks." \
+            "" \
+            "${todos}"
     fi
 } > "${output_path}"
