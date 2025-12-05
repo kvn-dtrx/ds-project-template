@@ -5,7 +5,6 @@ project:
   authors:
     - name: Kvn Dtrx
       mail: kvn.dtrx+git@protonmail.ch
-
 subtrees:
   - path: docs
     remote: docs
