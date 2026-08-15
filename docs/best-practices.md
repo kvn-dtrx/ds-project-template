@@ -9,8 +9,8 @@ Below, we present some (unordered) advice for refining submissions of *Take Me H
 - Even if it may appear excessive, include cross-validation of the model, which is reported to be a knockout criterion (sic!).
 
 - When writing custom Python functions:
-  - Adding docstrings is almost mandatory.
-  - Adding type annotations is desirable for positions oriented towards *ML Engineering*; for positions oriented towards *Data Analytics*, it may be considered misplaced.
+    - Adding docstrings is almost mandatory.
+    - Adding type annotations is desirable for positions oriented towards *ML Engineering*; for positions oriented towards *Data Analytics*, it may be considered misplaced.
 
 - Gather all required module imports in a cell near the beginning of the notebook.
 
@@ -19,8 +19,8 @@ Below, we present some (unordered) advice for refining submissions of *Take Me H
 - If not already specified by the requirements, the choice of evaluation metric ought to rest upon substantial argument and definitely not upon posterior cherry-picking.
 
 - Document your code twofold—even if it may seem excessive at the time of writing:
-  - Accompany code blocks with markdown cells, using full sentences.
-  - Add explanatory comments above lines of code.
+    - Accompany code blocks with markdown cells, using full sentences.
+    - Add explanatory comments above lines of code.
 
 - Make the implicit explicit, to demonstrate that you have not overlooked anything. For example, state that you retrieved the data using Python for the convenience of this exercise, but that you are, *of course*, aware that for large datasets you would employ SQL[^sql]
 

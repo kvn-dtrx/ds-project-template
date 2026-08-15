@@ -1,6 +1,7 @@
 # ---
-# description: Entry point for import.
+# description: >-
+#   Entry point for import
 # ---
 
-from .utils import *
 from .cfg import CFG
+from .utils import *
