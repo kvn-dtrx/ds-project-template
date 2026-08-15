@@ -1,4 +1,10 @@
-# Base
+# ---
+# title: Gitignore for template
+# ---
+
+# ---
+
+# --- Base ---
 
 # macOS
 .DS_Store
@@ -20,16 +26,15 @@ ehthumbs.db
 $RECYCLE.BIN/
 
 # Logs and temporary files
-**/log{,s}/
+log{,s}/
 *.bak
+*.bak[0-9]*
 *.log
 *.swo
 *.swp
 *.tmp
 
-# ---
-
-# Python
+# --- Python ---
 
 .python-version
 .venv/
@@ -37,18 +42,8 @@ $RECYCLE.BIN/
 __pycache__/
 *.pyi
 
-# ---
+# --- Data Science ---
 
-# Data Science
-
-data/*
-!data/.gitkeep
-
-**/plots/*
-!**/plots/.gitkeep
-
-models/*
-!models/.gitkeep
-
-**/logs/*
-!**/logs/.gitkeep
+data/
+plots/
+models/

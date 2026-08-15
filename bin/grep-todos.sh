@@ -39,8 +39,10 @@ tmp_path="${output_path}.tmp"
 
 git ls-files --cached --others --exclude-standard -z |
     xargs -0 grep -Hn -E "${REGEX}" 2> /dev/null |
-    sed 's@^[[:space:]]*@@' |
-    sed 's@^\(.*\):\([0-9]*\):@\- [\1, line \2](../../\1#L\2): @' > "${tmp_path}"
+    sed \
+        -e "s@^[[:space:]]*@@" \
+        -e "s@^\(.*\):\([0-9]*\):@\- [\1, line \2](../../\1#L\2): @" \
+        > "${tmp_path}"
 
 todos="$(cat "${tmp_path}")"
 no_todos="$(echo "${todos}" | sed -n '$=')"

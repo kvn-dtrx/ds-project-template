@@ -1,57 +1,79 @@
-# Base
+# ---
+# title: Gitignore for Data Science Project Template
+# ---
+
+# ---
+
+# dia:begin gitignore/base.ignore
+
+# --- Base ---
 
 # macOS
-.DS_Store
 .AppleDouble
+.DS_Store
 .LSOverride
 .Spotlight-V100
 .Trashes
-Icon[[]]
 ._*
+* [0-9]
+* [0-9].*
+* copy
+* copy.*
+*.nosync/
+Icon[[]]
 
 # Linux
-*~
 .nfs*
+*~
 
 # Windows
-Desktop.ini
-Thumbs.db
-ehthumbs.db
 $RECYCLE.BIN/
+Desktop.ini
+ehthumbs.db
+Thumbs.db
 
-# Logs and temporary files
-**/log{,s}/
+# Logs, temporary files, regenerable cache
 *.bak
+*.bak[0-9]*
+*.bkp
+*.cache
 *.log
+*.old
+*.swn
+*.swns
 *.swo
 *.swp
 *.tmp
+*_tmp.*
+build/
+cache/
+.cache/
+log/
+.log/
+logs/
+.logs/
+tmp/
+.tmp/
 
-# ---
+# Local mountpoints
+mnt/
+mount/
+mounts/
 
-# Python
-
-.python-version
-.venv/
-*.egg-info/
+# Scripting-language artefacts
+*.py[cod]
+*.rbc
+.ruby-lsp/
 __pycache__/
-*.pyi
 
-# ---
+# Local environment variables
+.env
+.env.*
+env/
+env.bak/
 
-# Data Science
+# Local configuration overrides
+*.local
+*.local.*
 
-**/data/*
-!data/.gitkeep
-
-**/plots/*
-!**/plots/.gitkeep
-
-**/models/*
-!models/.gitkeep
-
-**/logs/*
-!**/logs/.gitkeep
-
-**/target/*
-!**/target/.gitkeep
+# dia:end

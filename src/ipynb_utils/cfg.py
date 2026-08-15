@@ -1,21 +1,23 @@
 # ---
-# description: Configuration for notebooks.
+# description: >-
+#   Configuration for notebooks
 # ---
 
 # Required imports
 
 import os
 import subprocess
+from typing import Any
+
 import matplotlib.pyplot as plt
 import matplotlib.style as mplstyle
-from typing import Any, Dict
 
 # ---
 
 # General configurations
 
 # Configuration dictionary to hold various settings.
-CFG: Dict[str, Any] = {}
+CFG: dict[str, Any] = {}
 
 # Random seed for reproducibility.
 CFG["RSEED"] = 42

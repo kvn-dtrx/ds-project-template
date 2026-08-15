@@ -1,26 +1,27 @@
 # ---
-# description: Utility functions for notebooks.
+# description: >-
+#   Utility functions for notebooks
 # ---
 
 import os
-import pandas as pd
-from typing import List
+
 import matplotlib.pyplot as plt
+import pandas as pd
 from ipynb_nbutils.cfg import CFG
 
 
 def dump_df(
     df: pd.DataFrame,
     core: str,
-    extensions: List[str] = ["pkl"],
+    extensions: list[str] = ["pkl"],
     dir: str = CFG["DATA_DIR"],
 ) -> None:
     for extension in extensions:
-        target_path = os.path.join(dir, f"{core}.{extension}")
+        dst_path = os.path.join(dir, f"{core}.{extension}")
         if extension == "pkl":
-            df.to_pickle(target_path)
+            df.to_pickle(dst_path)
         elif extension == "csv":
-            df.to_csv(target_path, index=False)
+            df.to_csv(dst_path, index=False)
         else:
             raise ValueError(f"Unsupported file extension: {extension}")
 
@@ -43,11 +44,11 @@ def load_data(
     """
     _, extension_ = os.path.splitext(name)
     extension = extension_.lstrip(".")
-    target_path = os.path.join(dir, f"{name}")
+    dst_path = os.path.join(dir, f"{name}")
     if extension == "pkl":
-        return pd.read_pickle(target_path)
+        return pd.read_pickle(dst_path)
     elif extension == "csv":
-        return pd.read_csv(target_path)
+        return pd.read_csv(dst_path)
     else:
         raise ValueError(f"Unsupported file extension: {extension}")
 

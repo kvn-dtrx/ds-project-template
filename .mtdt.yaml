@@ -1,18 +1,16 @@
 project:
-  name: Data Science Project Template
-  description: A generic template for small data science projects
-  github: https://github.com/kvn-dtrx/ds-project-template
+  id: 04dadc4e-792a-4f1b-92b8-28389f45c0ba
+  name: DS Project Template
+  description: >-
+    A generic template for small data science projects
   authors:
     - name: Kvn Dtrx
       mail: kvn.dtrx+git@protonmail.ch
-subtrees:
-  - path: docs
-    remote: docs
-    branch: main
-    description: Documentation directory of the data science project template
-    github: git@github.com:kvn-dtrx/ds-project-template_docs.git
-  - path: template
-    remote: template
-    branch: main
-    description: Template directory of the data science project template
-    github: git@github.com:kvn-dtrx/ds-project-template_template.git
+  license:
+    type: MIT
+    year: 2025
+    file: LICENSE.txt
+forges:
+  github:
+    url: https://github.com/kvn-dtrx/ds-project-template
+    visibility: public
