@@ -6,7 +6,7 @@
 # Required imports
 
 import os
-import subprocess
+from pathlib import Path
 from typing import Any
 
 import matplotlib.pyplot as plt
@@ -26,12 +26,16 @@ CFG["RSEED"] = 42
 CFG["PLT_STYLE"] = "dark_background"
 # CFG["PLT_STYLE"] = "seaborn-v0_8-darkgrid"
 
+
+def find_project_root(start: Path) -> Path:
+    for directory in (start, *start.parents):
+        if (directory / ".mtdt.yaml").is_file():
+            return directory
+    raise FileNotFoundError(f"No .mtdt.yaml found above {start}")
+
+
 # Root directory of the project.
-CFG["ROOT_DIR"] = subprocess.run(
-    ["git", "rev-parse", "--show-toplevel"],
-    capture_output=True,
-    text=True,
-).stdout.strip()
+CFG["ROOT_DIR"] = str(find_project_root(Path.cwd()))
 
 
 # Function to join tokens with a root directory.

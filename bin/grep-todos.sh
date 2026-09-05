@@ -7,6 +7,20 @@
 
 # ---
 
+find_mtdt_root() (
+    start="${1:-${PWD}}"
+    root="$(CDPATH='' cd -- "${start}" 2> /dev/null && pwd -P)" || return 1
+    while [ ! -f "${root}/.mtdt.yaml" ]; do
+        parent="$(dirname "${root}")"
+        if [ "${parent}" = "${root}" ]; then
+            printf 'No .mtdt.yaml found above %s\n' "${start}" >&2
+            return 1
+        fi
+        root="${parent}"
+    done
+    printf '%s\n' "${root}"
+)
+
 OUTPUT_NAME="todos.md"
 OUTPUT_DIR="target"
 # REGEX='^[[:space:]]*(# |\*\*)?TODO:'
@@ -25,11 +39,11 @@ if ! cd "${script_dir}"; then
     exit 1
 fi
 
-git_dir="$(git rev-parse --show-toplevel 2> /dev/null)"
+git_dir="$(find_mtdt_root 2> /dev/null)"
 
 if ! cd "${git_dir}"; then
     printf "%s\n" \
-        "CDing to git repository location failed:" \
+        "CDing to .mtdt.yaml project root failed:" \
         "  ${script_dir}" \
         >&2
     exit 1

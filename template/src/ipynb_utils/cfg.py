@@ -6,8 +6,8 @@
 # Required imports
 
 import os
-import subprocess
-from typing import Any, Dict
+from pathlib import Path
+from typing import Any
 
 import matplotlib.pyplot as plt
 
@@ -21,12 +21,16 @@ CFG: dict[str, Any] = {}
 # Random seed for reproducibility.
 CFG["RSEED"] = 42
 
+
+def find_project_root(start: Path) -> Path:
+    for directory in (start, *start.parents):
+        if (directory / ".mtdt.yaml").is_file():
+            return directory
+    raise FileNotFoundError(f"No .mtdt.yaml found above {start}")
+
+
 # Root directory of the project.
-CFG["ROOT_DIR"] = subprocess.run(
-    ["git", "rev-parse", "--show-toplevel"],
-    capture_output=True,
-    text=True,
-).stdout.strip()
+CFG["ROOT_DIR"] = str(find_project_root(Path.cwd()))
 
 
 # Function to join tokens with a root directory.
@@ -51,7 +55,7 @@ PLT_STYLE = "dark_background"
 
 try:
     plt.style.use(PLT_STYLE)
-except:
+except Exception:
     print("Could not load the specified matplotlib style:")
     print(PLT_STYLE)
     print("Default style will be used")
